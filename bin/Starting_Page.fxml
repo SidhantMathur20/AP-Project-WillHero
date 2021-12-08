@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Starting_Page">
+   <children>
+      <ImageView fitHeight="807.0" fitWidth="1009.0" layoutX="-4.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/Starting_background.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="newgame" fitHeight="140.0" fitWidth="224.0" layoutX="188.0" layoutY="656.0" onMouseDragEntered="#new_game" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/Newgame.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="exit" fitHeight="194.0" fitWidth="206.0" layoutX="442.0" layoutY="664.0" onMouseDragEntered="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/Exit.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="load" fitHeight="143.0" fitWidth="230.0" layoutX="673.0" layoutY="655.0" onMouseDragEntered="#load" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/Load.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
