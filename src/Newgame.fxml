@@ -13,7 +13,7 @@
          </image>
       </ImageView>
       <TextField layoutX="434.0" layoutY="559.0" />
-      <ImageView fx:id="entername" fitHeight="70.0" fitWidth="135.0" layoutX="451.0" layoutY="593.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="entername" fitHeight="70.0" fitWidth="135.0" layoutX="451.0" layoutY="593.0" onMouseClicked="#strt" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Images/Enteryourname.png" />
          </image>

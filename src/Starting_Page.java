@@ -24,8 +24,6 @@ public class Starting_Page implements Initializable {
     @FXML
     private ImageView exit;
     @FXML
-    private ImageView load;
-    @FXML
     private ImageView armorhero;
     @FXML
     private ImageView tigerhero;
@@ -64,13 +62,6 @@ public class Starting_Page implements Initializable {
         exit_A.setDuration(Duration.millis(500));
         exit_A.play();
 
-        TranslateTransition load_A=new TranslateTransition();
-        load_A.setNode(load);
-        load_A.setByY(-3);
-        load_A.setCycleCount(1000);
-        load_A.setAutoReverse(true);
-        load_A.setDuration(Duration.millis(500));
-        load_A.play();
 
         TranslateTransition armorhero_A=new TranslateTransition();
         armorhero_A.setNode(armorhero);
@@ -137,18 +128,15 @@ public class Starting_Page implements Initializable {
     
 
     public void new_game(MouseEvent event) throws IOException {
-        Parent root=FXMLLoader.load(getClass().getResource("Newgame.fxml"));
+        Parent root=FXMLLoader.load(getClass().getResource("checking.fxml"));
         stage=(Stage)((Node)event.getSource()).getScene().getWindow();
         scene=new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
-    public void exit(MouseEvent event) throws IOException {
-        Parent root=FXMLLoader.load(getClass().getResource("The_World.fxml"));
-        stage=(Stage)((Node)event.getSource()).getScene().getWindow();
-        scene=new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+    public void ex(MouseEvent event) throws IOException {
+        // ex();
+        System.exit(0);
     }
     public void load(MouseEvent event) throws IOException {
         Parent root=FXMLLoader.load(getClass().getResource("Loadgame.fxml"));
@@ -157,6 +145,10 @@ public class Starting_Page implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
+
+    // public int ex() {
+    //     exit(0);
+    // }
 
 }
 

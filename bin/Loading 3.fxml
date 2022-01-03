@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Loading">
+   <children>
+      <ImageView fitHeight="806.0" fitWidth="1074.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/The_world_background.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rotator" fitHeight="49.0" fitWidth="88.0" layoutX="355.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/ArrowLoading.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="437.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/Loading_text.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hero" fitHeight="150.0" fitWidth="200.0" layoutX="402.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/Hero2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

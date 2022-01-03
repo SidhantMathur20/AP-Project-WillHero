@@ -33,7 +33,7 @@ public class fornewgame implements Initializable{
         TranslateTransition entername_A=new TranslateTransition();
         entername_A.setNode(entername);
         entername_A.setByY(-3);
-        entername_A.setCycleCount(1000);
+        entername_A.setCycleCount(TranslateTransition.INDEFINITE);
         entername_A.setAutoReverse(true);
         entername_A.setDuration(Duration.millis(500));
         entername_A.play();
@@ -41,7 +41,7 @@ public class fornewgame implements Initializable{
         TranslateTransition Back_A=new TranslateTransition();
         Back_A.setNode(Back);
         Back_A.setByY(-3);
-        Back_A.setCycleCount(1000);
+        Back_A.setCycleCount(TranslateTransition.INDEFINITE);
         Back_A.setAutoReverse(true);
         Back_A.setDuration(Duration.millis(500));
         Back_A.play();
@@ -51,6 +51,14 @@ public class fornewgame implements Initializable{
 
     public void goBack(MouseEvent event) throws IOException {
         Parent root=FXMLLoader.load(getClass().getResource("Mainmenu.fxml"));
+        stage=(Stage)((Node)event.getSource()).getScene().getWindow();
+        scene=new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+
+    }
+    public void strt(MouseEvent event) throws IOException {
+        Parent root=FXMLLoader.load(getClass().getResource("checking.fxml"));
         stage=(Stage)((Node)event.getSource()).getScene().getWindow();
         scene=new Scene(root);
         stage.setScene(scene);
