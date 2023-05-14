@@ -2,4 +2,4 @@ Will Hero is an exciting platformer game that puts you in the shoes of a brave h
 
 
 
-https://github.com/SidhantMathur20/AP-Project-WillHero/issues/2#issue-1708827918
+https://github.com/SidhantMathur20/AP-Project-WillHero/assets/88873670/f0a02f88-77c6-466a-b69b-c522580e8f87
